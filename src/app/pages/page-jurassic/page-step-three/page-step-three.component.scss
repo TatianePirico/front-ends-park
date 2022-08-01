@@ -1,0 +1,84 @@
+.step-three{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+
+  &__dino {
+    width: 200px;
+    position: absolute;
+    bottom: 90px;
+    left: -190px;
+    transition: left 5s ease;
+
+    &--goes{
+      left: 230px;
+    }
+
+    &--leave{
+      left: 1000px;
+    }
+  }
+
+  &__button{
+    z-index: 200;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    bottom: 90px;
+    right: 230px;
+    cursor: pointer;
+
+    &--hide{
+      display: none;
+    }
+  }
+
+  &__speech-bubble{
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    opacity: 1;
+    transition: opacity 2s ease;
+
+    &--hide{
+      opacity: 0;
+    }
+  }
+
+  &__image{
+    width: 150px;
+    opacity: 0.8;
+
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &__velociraptor{
+    width: 200px;
+    position: absolute;
+    bottom: 70px;
+    animation-duration: 2s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: none;
+
+    &--hide{
+      display: inline;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    left: -120px;
+  }
+
+  to {
+    left: -60px;
+  }
+}
+

@@ -1,0 +1,24 @@
+<div class="step-four">
+  <div>
+    <div>
+      <app-speech-bubble class="step-four__speech-bubble" [ngClass]="{ 'step-four__speech-bubble--hide': !showSpeechBubble }">
+        <p>Ahhhhhh, as emoções nunca param!</p>
+        <p>Esse é o Chico ele é um braquiossauro, ele é o PO do nosso Park e chegou com uma task! Vou passar a mensagem dele para vocês!</p>
+        <div>
+          <p class="step-four__task">“Dado que o time de front-end (mais incríveis do mundo) visita o Park</p>
+          <p class="step-four__task">Quando chegar na missão 4</p>
+          <p class="step-four__task">Então deve aparecer um alert-inline informando a temperatura do park</p>
+          <p class="step-four__task">-> O componente não existe e precisa ser desenvolvido</p>
+          <p class="step-four__task">-> O componente deve ser importado na página “layout”</p>
+          <p class="step-four__task">-> A temperatura do park esta na variável  “currentTemperature”</p>
+          <p class="step-four__task">-> O designer do componente foi liberado para o gosto de vocês”</p>
+        </div>
+      </app-speech-bubble>
+      <img class="step-four__dino" [ngClass]="dinoMove()" src="assets/images/surprise.png" alt="Dino Step 4">
+    </div>
+    <img class="step-four__braquiossauro" [ngClass]="{ 'step-four__braquiossauro--show': showBraquiossauro }" src="assets/images/braquiossauro.png" alt="Braquiossauro">
+    <button class="step-four__button" (click)="nextChallenge()">
+      <img class="step-four__image"src="assets/images/arrow.png" alt="Concluir Step 4">
+    </button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="step-three">
+  <div>
+    <img class="step-three__velociraptor" [ngClass]="{ 'step-three__velociraptor--hide': showVelociraptor }" src="assets/images/velociraptor.png" alt="Velociraptor">
+    <div>
+      <app-speech-bubble class="step-three__speech-bubble" [ngClass]="{ 'step-three__speech-bubble--hide': !showSpeechBubble }">
+        <p>PELO DINOSSAURO!!!!</p>
+        <p>Vocês ouviram isso? Acho que é um velociraptor! Eles são carnívoros e são atraídos por testes unitários quebrados!</p>
+        <p>SOCORROOOOOOOO!</p>
+      </app-speech-bubble>
+      <img class="step-three__dino" [ngClass]="dinoMove()" src="assets/images/fear.png" alt="Dino Step 3">
+    </div>
+    <button class="step-three__button" (click)="nextChallenge()">
+      <img class="step-three__image"src="assets/images/arrow.png" alt="Concluir Step 3">
+    </button>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<main id="main">
+  <router-outlet></router-outlet>
+  <app-alert  class="alert" [ngClass]="{ 'alert--hide': !alertIsOpen }">
+    <h3>Lembrete!</h3>
+    <p>Antes de ir para a próxima missão não se esqueça de "commitar"!</p>
+  </app-alert>
+  <div class="background_front"></div>
+  <div class="help" [ngClass]="{ 'help--is-open': isOpen }">
+    <h2 (click)="showHideHelp()" class="help__title">Ajuda</h2>
+    <div class="help__options-list">
+      <div class="help__option" [ngClass]="{ 'help__option--disable': dinoHelp == 0 }" (click)="dinoHelp > 0 && useHelp('dino')">
+        <img class="help__icon" src="assets/images/idea.png" alt="Ajuda do Dino">
+        <label class="help__count">{{dinoHelp}}</label>
+      </div>
+      <div class="help__option" [ngClass]="{ 'help__option--disable': bossHelp == 0 }" (click)="bossHelp > 0 && useHelp('boss')">
+        <img class="help__icon" src="assets/images/man.png" alt="Ajuda do Ramon">
+        <label class="help__count">{{bossHelp}}</label>
+      </div>
+      <div class="help__option" [ngClass]="{ 'help__option--disable': teamHelp == 0 }" (click)="teamHelp > 0 && useHelp('team')">
+        <img class="help__icon" src="assets/images/goal.png" alt="Ajuda do time">
+        <label class="help__count">{{teamHelp}}</label>
+      </div>
+    </div>
+  </div>
+</main>

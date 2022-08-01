@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: url('assets/images/florest.jpeg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+h3{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}

@@ -1,0 +1,14 @@
+<div class="step-two">
+  <div>
+    <app-speech-bubble class="step-two__speech-bubble" [ngClass]="{ 'step-two__speech-bubble--hide': !showSpeechBubble }">
+      <p>Vocês resolveram a primeira missão! PARABÉÉÉÉNS!</p>
+      <p>Caso vocês precisem de apoio durante a estadia, podem clicar em "Ajuda" aqui embaixo!</p>
+      <p>Alias, meu sonho é que todas os títulos da ilha fossem “Moranga” como no site neon… Vocês conseguem me ajudar?</p>
+      <p>A URL é: https://neonassets.com/fonts/moranga-medium.woff</p>
+    </app-speech-bubble>
+    <img class="step-two__dino" [ngClass]="dinoMove()" src="assets/images/drawing.png" alt="Dino Step 2">
+  </div>
+  <button class="step-two__button" (click)="nextChallenge()">
+    <img class="step-two__image"src="assets/images/arrow.png" alt="Concluir Step 2">
+  </button>
+</div>

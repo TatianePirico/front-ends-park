@@ -1,0 +1,95 @@
+@import '../../../styles/variables';
+
+.background_front {
+  background: url('../../../assets/images/florest_front.png')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+.help {
+  position: fixed;
+  bottom: -140px;
+  z-index: 200;
+  height: 150px;
+  background-color: $color-jurassic-green-primary;
+  width: 100vw;
+  transition: bottom 2s ease;
+
+  &--is-open{
+    bottom: 0;
+  }
+
+  &__title{
+    position: absolute;
+    bottom: 140px;
+    left: calc(50% - 70px);
+    color: $color-white;
+    background-color: $color-jurassic-green-secondary;
+    border-radius: 29px 29px 5px 29px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0.05rem 0.8rem;
+    cursor: pointer;
+  }
+
+  &__icon{
+    width: 100px;
+  }
+
+  &__option{
+    border-radius: 50%;
+    background-color: $color-white;
+    border: 5px solid $color-jurassic-green-secondary;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover{
+      border: 5px solid $color-white;
+    }
+
+    &--disable{
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  &__options-list{
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+  }
+
+  &__count{
+    background-color: $color-jurassic-red;
+    font-size: 16px;
+    position: absolute;
+    bottom: 30px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin: 0px 0px -10px -20px;
+  }
+}
+
+.alert{
+  opacity: 1;
+  transition: opacity 2s ease;
+
+  &--hide{
+    opacity: 0;
+  }
+}

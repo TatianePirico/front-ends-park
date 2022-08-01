@@ -1,0 +1,16 @@
+<div class="not-found">
+  <div class="not-found__content">
+    <div class="not-found__image">
+      <app-speech-bubble class="not-found__speech-bubble" [ngClass]="{ 'not-found__speech-bubble--is-moving': dinoIsMoving }">Weeeeeeeeee</app-speech-bubble>
+      <img class="not-found__pterodactyl"[ngClass]="{ 'not-found__pterodactyl--is-moving': dinoIsMoving }"  src="assets/images/pterodactilo.png" alt="Dino Error 404">
+    </div>
+    <div class="not-found__text">
+      <h3 class="not-found__title">Ooooops!</h3>
+      <p class="not-found__describe">Página não encontrada!</p>
+      <p class="not-found__describe">Pegue carona com o Pterodáctilo e volte para página inicial</p>
+      <app-button (click)="goToHome()">Pegar carona</app-button>
+    </div>
+  </div>
+  <img class="not-found__dino"src="assets/images/crying.png" [ngClass]="{ 'not-found__dino--goes': dinoEnter }" alt="Dino Error 404">
+  <div class="background_front"></div>
+</div>
