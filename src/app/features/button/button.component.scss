@@ -1,0 +1,20 @@
+@import '../../../styles/variables';
+
+.button{
+  outline: none;
+  border-radius: 60px;
+  padding: 10px 32px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color: $color-white;
+  background-color: $color-jurassic-green-primary;
+  text-transform: uppercase;
+  border: 5px solid $color-jurassic-green-secondary;
+
+  &:hover{
+    border: 5px solid $color-white;
+  }
+}

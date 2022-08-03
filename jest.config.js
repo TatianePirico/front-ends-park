@@ -1,0 +1,26 @@
+module.exports = {
+  preset: 'jest-preset-angular',
+  setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
+  globalSetup: 'jest-preset-angular/global-setup',
+  moduleFileExtensions: ['ts', 'js'],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/node_modules/",
+    "<rootDir>/dist/",
+    "<rootDir>/src/*.routing.module.ts",
+    "<rootDir>/src/*.module.ts",
+    "<rootDir>/src/main.ts",
+    "<rootDir>/src/environments/",
+    "<rootDir>/src/assets/",
+    "<rootDir>/src/polyfills.ts",
+    "<rootDir>/src/*.model.ts",
+    "<rootDir>/src/*.spec.ts",
+    "<rootDir>/src/app/core/mocks/",
+    "<rootDir>/src/app/core/classes/",
+    "<rootDir>/src/app/core/enums/",
+    "<rootDir>/src/app/core/interfaces/",
+    "<rootDir>/src/app/core/constants/",
+  ],
+  "modulePaths": [
+    "<rootDir>",
+  ],
+};

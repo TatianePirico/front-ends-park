@@ -1,0 +1,15 @@
+<div class="step-one">
+  <img class="step-one__logo"src="assets/images/frontends_park_logo.png" alt="Frontend's Park">
+  <div>
+    <app-speech-bubble class="step-one__speech-bubble" [ngClass]="{ 'step-one__speech-bubble--hide': !showSpeechBubble }">
+      <p>Bem vindos, a ilha Neonssauro!</p>
+      <p>Vocês estão prontos para uma aventura no Front-end’s Park?</p>
+      <p>Tínhamos um botão aqui com a classe”step-one__button”, mas não sei onde foi parar… Vocês me ajudam a encontrar?</p>
+    </app-speech-bubble>
+    <img class="step-one__dino" [ngClass]="dinoMove()" src="assets/images/photographer.png" alt="Dino Step 1">
+  </div>
+  <button class="step-one__button step-one__button--hide" (click)="nextChallenge()">
+    <img class="step-one__image"src="assets/images/arrow.png" alt="Concluir Step 1">
+  </button>
+</div>
+

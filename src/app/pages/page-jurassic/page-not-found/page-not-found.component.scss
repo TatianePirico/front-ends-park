@@ -1,0 +1,88 @@
+@import '../../../../styles/variables';
+
+.background_front {
+  background: url('../../../../assets/images/florest_front.png')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 100;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+
+.not-found{
+  &__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+  &__text{
+    background-color: rgb(255 255 255 / 30%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 60px;
+    position: absolute;
+    left: 40%;
+    z-index: 200;
+  }
+
+  &__title{
+    color: $color-white;
+  }
+
+  &__describe {
+    color: $color-white;
+  }
+
+  &__dino {
+    width: 200px;
+    position: absolute;
+    bottom: 90px;
+    left: -190px;
+    transition: left 5s ease;
+
+    &--goes{
+      left: 230px;
+    }
+  }
+
+  &__speech-bubble{
+    display: none;
+    left: 25%;
+    position: absolute;
+    top: 30%;
+    &--is-moving{
+      display: inline;
+      animation-name: slide;
+      animation-duration: 4s;
+    }
+  }
+
+  &__pterodactyl{
+    width: 250px;
+    left: 25%;
+    position: absolute;
+    margin-top: 10px;
+
+    &--is-moving{
+      animation-name: slide;
+      animation-duration: 4s;
+    }
+  }
+}
+
+@keyframes slide {
+  100% { left: 0; position: absolute;}
+}
+

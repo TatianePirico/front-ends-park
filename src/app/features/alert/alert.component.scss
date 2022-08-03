@@ -1,0 +1,56 @@
+@import '../../../styles/variables';
+
+:host{
+  position: absolute;
+  z-index: 500;
+  right: 30px;
+  top: 30px;
+}
+
+.alert {
+  position: relative;
+  width: 400px;
+  min-height: 100px;
+  cursor: pointer;
+  background: $color-white;
+  box-shadow: var(--boxShadow);
+  transition: 0.3s ease-in-out;
+  padding: 0 1rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+    content: "";
+    background-color: $color-jurassic-green-secondary !important;
+  }
+
+  &:hover{
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:hover{
+      color: $color-white;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    display: flex;
+    min-width: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+}

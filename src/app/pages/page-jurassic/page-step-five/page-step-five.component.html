@@ -1,0 +1,16 @@
+<div class="step-five">
+  <div>
+    <div>
+      <app-speech-bubble class="step-five__speech-bubble" [ngClass]="{ 'step-five__speech-bubble--hide': !showSpeechBubble }">
+        <p>Qual a cor favorita de vocês?</p>
+        <p>A minha é laranja!</p>
+        <p>Vocês poderiam mudar a cor do alerta de Lembre de Commit de verde (#4B7221) para laranja (#CA7622)?</p>
+        <p>Lembrando que precisamos continuar usando as cores do _variables.scss</p>
+      </app-speech-bubble>
+      <img class="step-five__dino" [ngClass]="dinoMove()" src="assets/images/painter.png" alt="Dino Step 4">
+    </div>
+    <button class="step-five__button" (click)="nextChallenge()">
+      <img class="step-five__image"src="assets/images/arrow.png" alt="Concluir Step 4">
+    </button>
+  </div>
+</div>
